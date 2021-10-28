@@ -24,6 +24,7 @@ function DNA(length) {
             }
         }
         this.fitness = score / target.length;
+        this.fitness = pow(this.fitness, 2);
     }
 
     this.crossover = function(partner) {
